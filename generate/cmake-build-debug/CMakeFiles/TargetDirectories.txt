@@ -1,0 +1,3 @@
+D:/SOPHOMORE_1/DSAFEcode/Practice/generate/cmake-build-debug/CMakeFiles/generate.dir
+D:/SOPHOMORE_1/DSAFEcode/Practice/generate/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/SOPHOMORE_1/DSAFEcode/Practice/generate/cmake-build-debug/CMakeFiles/rebuild_cache.dir
