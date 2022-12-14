@@ -49,10 +49,6 @@ public:
 main(){
     ListNode* temp=new ListNode(1);
     ListNode* head=temp;
-    // for(int i=0;i<4;i++){
-    //     temp->next=new ListNode(i+2);
-    //     temp=temp->next;
-    // }
     Solution s;
     ListNode* answer=head;
     while(answer){
