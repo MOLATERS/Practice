@@ -62,7 +62,7 @@ public:
         return answer;
     }
 };
-main(){
+int main(){
     vector<int> num;
     // num.push_back(-1);
     // num.push_back(-1);
