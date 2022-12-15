@@ -8,8 +8,8 @@ public:
         vector<vector<int>> answer;
         int second;
         int third;
-        int first=0;
-        int size=nums.size();
+        int first = 0;
+        int size = nums.size();
         if(size<3)return answer;
         sort(nums.begin(),nums.end());
         if(nums[0]>0)return answer;
@@ -19,9 +19,9 @@ public:
             third=size-1;
             while(second<third){
                 if(nums[first]+nums[second]+nums[third]<0){
-                    do{
+                    do {
                         second++;
-                    }while(nums[second]==nums[second+1]);
+                    } while (nums[second] == nums[second + 1]);
                 }
                 else if (nums[first]+nums[second]+nums[third]>0){
                 do{
@@ -63,22 +63,7 @@ public:
     }
 };
 int main(){
-    vector<int> num;
-    // num.push_back(-1);
-    // num.push_back(-1);
-    // num.push_back(-1);
-    // num.push_back(-4);
-    // num.push_back(-4);
-    num.push_back(0);
-    num.push_back(0);
-    num.push_back(0);
-    num.push_back(0);
-    // num.push_back(1);
-    // num.push_back(1);
-    // num.push_back(1);
-    // num.push_back(2);
-    // num.push_back(8);
-    // num.push_back(10);
+    vector<int> num={0,0,0,0};
     Solution S;
     vector<vector<int>> answer;
     answer=S.threeSum(num);
