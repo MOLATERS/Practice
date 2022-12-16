@@ -44,9 +44,10 @@ main(){
     Solution s;
     answer=s.generateMatrix(4);
     for(int i=0;i<answer.size();i++){
-        for(int j=0;j<answer.size();j++){
-            cout<<answer[i][j]<<" ";
-        }
         cout<<endl;
+        for(int j=0;j<answer.size();j++){
+            cout<<answer[i][j]<<"\t";
+        }
+        cout<<endl<<endl;
     }
 }
