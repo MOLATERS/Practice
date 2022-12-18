@@ -14,7 +14,7 @@ public:
             right++;
             hash[temp]++;
             while(hash[temp]>1){
-                char temp1=hash[left];
+                char temp1=s[left];
                 left++;
                 hash[temp1]--;
             }
@@ -23,3 +23,9 @@ public:
         return answer;
     }
 };
+main(){
+    string s="pwwkew";
+    Solution S;
+    cout<<S.lengthOfLongestSubstring(s);
+    return 0;
+}
