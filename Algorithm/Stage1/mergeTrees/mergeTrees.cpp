@@ -27,21 +27,21 @@ public:
     //     Merge(answer,root1,root2);
     //     return answer;
     // }
-    // void Merge(TreeNode* &answer,TreeNode* root1,TreeNode* root2){
-    //     if(root1||root2){
-    //         answer=new TreeNode();
-    //         int val_1=root1?root1->val:0;
-    //         int val_2=root2?root2->val:0;
-    //         answer->val=val_1+val_2;
-    //         TreeNode* root2_left=root2?root2->left:nullptr;
-    //         TreeNode* root2_right=root2?root2->right:nullptr;
-    //         TreeNode* root1_left=root1?root1->left:nullptr;
-    //         TreeNode* root1_right=root1?root1->right:nullptr;
-    //         Merge(answer->left,root1_left,root2_left);
-    //         Merge(answer->right,root1_right,root2_right);
-    //     }
-    //     return ;
-    // }
+    void Merge(TreeNode* &answer,TreeNode* root1,TreeNode* root2){
+        if(root1||root2){
+            answer=new TreeNode();
+            int val_1=root1?root1->val:0;
+            int val_2=root2?root2->val:0;
+            answer->val=val_1+val_2;
+            TreeNode* root2_left=root2?root2->left:nullptr;
+            TreeNode* root2_right=root2?root2->right:nullptr;
+            TreeNode* root1_left=root1?root1->left:nullptr;
+            TreeNode* root1_right=root1?root1->right:nullptr;
+            Merge(answer->left,root1_left,root2_left);
+            Merge(answer->right,root1_right,root2_right);
+        }
+        return ;
+    }
     // TreeNode* Merge(TreeNode* &answer,TreeNode* root1,TreeNode* root2){
     //     if(root1&&root2){
     //         answer=new TreeNode();
