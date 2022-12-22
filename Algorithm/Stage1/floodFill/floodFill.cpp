@@ -10,7 +10,7 @@ public:
     void fill(vector<vector<int>> &image,int sr,int sc,int original,int newcolor){
         if(!Isvalid(sr,sc,image))return;
         if(image[sr][sc]!=original)return;
-        if(image[sr][sc]==-1)return;
+        if(image[sr][sc]==-1)return;//三个结束条件，要求是不同颜色，位置不合法并且被访问过
         image[sr][sc]=-1;
         fill(image,sr-1,sc,original,newcolor);
         fill(image,sr+1,sc,original,newcolor);

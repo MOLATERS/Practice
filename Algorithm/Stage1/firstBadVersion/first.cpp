@@ -4,7 +4,11 @@ using namespace std;
 class Solution {
 public:
     bool isBadVersion(int n){
-        return n>=2?true:false;
+        if (n >= 2) {
+            return true;
+        } else {
+            return false;
+        }
     }
     int firstBadVersion(int n) {
         int high=n;
