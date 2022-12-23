@@ -23,16 +23,11 @@ public:
     }
 };
 main(){
-    vector<int> nums;
-    nums.push_back(1);
-    nums.push_back(0);
-    nums.push_back(1);
-    nums.push_back(2);
-    nums.push_back(0);
-    nums.push_back(0);
-    nums.push_back(4);
-    nums.push_back(6);
+    vector<int> nums={1,0,1,2,0,0,4,6};
     Solution s;
     s.moveZeroes(nums);
+    for(auto x:nums){
+        cout<<x<<" ";
+    }
     return 0;
 }
