@@ -3,5 +3,8 @@
     "files.associations": {
         "xstring": "cpp",
         "unordered_map": "cpp"
+    },
+    "workbench.colorCustomizations": {
+    
     }
 }
