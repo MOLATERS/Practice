@@ -2,7 +2,8 @@
     "C_Cpp.errorSquiggles": "enabledIfIncludesResolve",
     "files.associations": {
         "xstring": "cpp",
-        "unordered_map": "cpp"
+        "unordered_map": "cpp",
+        "vector": "cpp"
     },
     "workbench.colorCustomizations": {
     
