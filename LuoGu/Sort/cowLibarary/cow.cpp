@@ -1,18 +1,26 @@
 #include <iostream>
+#include <algorithm>
 using namespace std;
-struct Cow{
-    int height[20000];
-    int number;
-    Cow(int x):number(x){
-        for(int i=0;i<x;i++){
-            height[i]=0;
-        }
-    }
-}cow;
-class Solution {
-public:
-int count;
-int minCow(struct Cow Cows,int n){
-    
+int high[20005];
+bool cmp(int a,int b)//使用sort排序定义从大到小
+{
+	return a>b;
 }
-};
+int main()
+{
+	int n,b;
+	cin>>n>>b;
+	for(int i=0;i<n;i++)
+	{
+		cin>>high[i];
+	}
+	sort(high,high+n,cmp);//sort一键排序
+	int sum=0,ans=0;
+	while(sum<b)//只要高度不够就继续叠
+	{
+		sum+=high[ans];
+		ans++;
+	}
+	cout<<ans;
+	return 0;
+}
