@@ -33,15 +33,15 @@ public:
         int i;
         for(i=2*k;i<=n;i*=2){
             if(i<n&&issmaller(H[i],H[i+1])){
-                i++;
+                i++;//选择更大的那个
             }
-            if(!issmaller(H[0],H[i]))break;
+            if(!issmaller(H[0],H[i]))break;//如果现在的对应值小于需要安排的值，就退出
             else{
-                H[k]=H[i];
-                k=i;
+                H[k]=H[i];//否则就将最初要调整的值的位置更改为当前选择的值的位置
+                k=i;//将当前值再进行继续调整
             }
         }
-        H[k]=H[0];
+        H[k]=H[0];//将最后的适应部分的数值返回
     }
     void swap(Student* &a,Student* &b){
         Student* temp=new Student();
@@ -50,13 +50,13 @@ public:
         b=temp;
     }
     void heapSort(int n){
-        buildMaxHeap(n);
+        buildMaxHeap(n);//建立最大堆
         for(int i=n;i>n-5;i--){
             if(H[1]!=nullptr){
                 cout<<H[1]->index<< " "<<H[1]->sum<<endl;
             }
-            swap(H[1],H[i]);
-            Adjustheap(1,i-1);
+            swap(H[1],H[i]);//交换最后和第一个元素
+            Adjustheap(1,i-1);//对前面i-1个元素形成的堆进行调整
         }
     }
 };
