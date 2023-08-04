@@ -8,6 +8,7 @@ struct Student{
     Student(int x,int y,int z):index(x),sum(y),chinese(z){}
 };
 Student* H[10000]={new Student()};
+
 class Heap{
 public:
     void buildMaxHeap(int n){
