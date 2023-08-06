@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",               //   配置名称可随意更改
+            "includePath": [             //运行项目包含.h头文件的目录，在此处添加外部头文件路径
+                "${workspaceFolder}/**",
+                "D:\\raylib\\raylib"
+                 //外部路径                  //此处会匹配工作文件下的所有文件
+            ],             //添加"compilerPath"后,系统include路径可不写明
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "D:/MinGw/bin/g++.exe",//编译器的路径
+            "cStandard": "c17",//C标准的版本
+            "cppStandard": "c++17",//C++标准的版本
+            "intelliSenseMode": "${default}"
+        }
+    ],
+    "version": 4
+}
