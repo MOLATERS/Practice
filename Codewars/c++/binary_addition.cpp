@@ -18,7 +18,6 @@ std::string add_binary(uint64_t a, uint64_t b){
     }   
 }
 
-
 int main(){
     cout<<add_binary(4,4);
 }

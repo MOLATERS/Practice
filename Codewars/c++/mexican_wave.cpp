@@ -23,4 +23,6 @@ int main(){
     for(auto x : result){
         cout<<x<<endl;
     }
+	int temp = 0;
+	return temp;
 }
